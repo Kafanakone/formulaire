@@ -1,0 +1,164 @@
+body{
+    background-image: url('images/fond-2.jpg');
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 500px;
+}
+input{
+    border: none;
+    display: block;
+    margin-top: 30px;
+}
+/* .clear{
+    clear: both;
+} */
+ul, li{
+    list-style: none;
+}
+h2{
+    font-weight: bold;
+
+}
+a{
+    text-decoration: none;
+    display: inline;
+    float: left;
+    margin-right: 15px;
+    color: #fff;
+
+}
+/* .conteneur{
+    overflow: hidden; 
+    margin-top: 80px ;
+    margin-left:300px ;
+    margin-right:150px ;
+    background-color: #fff;
+    width: 800px;
+    height: 380px;
+} */
+/* .conteneur>.mini-conteneur-1, .conteneur> .mini-conteneur-2{
+    display: inline;
+} */
+.mini-conteneur-1{
+/* overflow: hidden; */
+    float: left;
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-left: 360px;
+    margin-top: 90px;
+    width: 300px;
+    height: 380px;
+    background-color: rgb(122, 93, 173, 0.5);
+}
+.mini-conteneur-1 h2, p{
+     padding-left: 20px; 
+    /* text-align: center; */
+    }
+.mini-conteneur-1 .facebook{
+    border: 1px rgb(5, 20, 85) solid;
+    border-radius: 8px;
+    background-color:rgb(5, 20, 85);
+    padding: 15px;
+}
+.mini-conteneur-1 .linkedin{
+    border: 1px rgb(38, 89, 255) solid;
+    border-radius: 8px;
+    background-color: rgb(38, 89, 255);
+    padding: 15px;
+}
+.mini-conteneur-1 .linkedin:hover, .mini-conteneur-1 .facebook:hover {
+    background-color:transparent;
+}
+
+.reseauS{
+    color: #fff;
+    padding-top: 30px;
+
+}
+.mini-conteneur-2{
+    float: right;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 320px;
+    height: 380px;
+    background-color:#fff;
+    margin-top: 90px;
+}
+.mini-conteneur-2 h2{
+    color:rgb(4, 4, 80);
+}
+.mini-conteneur-2 input[type='text'], input[type='password']{
+    width: 290px;
+    border-bottom: 1px rgb(192, 191, 191) solid;
+    padding-bottom: 30px;
+}
+
+.mini-conteneur-2 input[type='text']:focus~label{
+    top: -5px;
+    opacity: 0;
+    left: 0;
+    color: rgba(103,58,183);
+    font-size: 12px;
+    color: #07315B;
+    font-weight: bold;
+}
+
+.mini-conteneur-2 input[type='submit']{
+    text-align: center;
+    border: 1px #8c6cc2 solid;
+    padding: 10px;
+    margin-left: 20px;
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #8c6cc2;
+    color: #fff;
+}
+.mini-conteneur-2 input[type='submit']:hover{
+    background-color: #270562;
+}
+textarea, input {
+    outline: none;
+    border: none;
+}
+
+
+/* Responsive */
+
+@media (max-width:1050px) {
+    body{
+        width: 800px;
+    }
+    .mini-conteneur-1{
+            margin-left: 50px;
+            width: 300px;
+        }
+        .mini-conteneur-2{
+            width: 320px;
+            margin-right: 110px;
+        }
+}
+@media (max-width:850px) {
+    body{
+        width: 480px;
+    }
+    .mini-conteneur-1{
+        /* overflow: hidden; */
+            width: 160px;
+            margin-left: 30px;
+        }
+        .mini-conteneur-2{
+            width: 200px;
+        }
+        .mini-conteneur-1 .facebook{
+            margin-bottom: 20px;
+        }
+        .mini-conteneur-2 input[type='text'], input[type='password']{
+            width: 180px;
+        }
+        .mini-conteneur-2 input[type='submit']{
+           width: 160px;
+        }
+    
+}
